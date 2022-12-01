@@ -2,10 +2,10 @@
 
 document.write("<h1>If Conditions </h1>")
 
-var a =200;
-var b= 40;
+var a = 200;
+var b = 40;
 
-if(a>b){
+if (a > b) {
     document.write("a is grater <br>")
 }
 
@@ -16,10 +16,10 @@ if(a>b){
 
 
 
-var a =200;
-var b= "200";
+var a = 200;
+var b = "200";
 
-if(a===b){
+if (a === b) {
     document.write("a is grater")
 }
 
@@ -31,9 +31,9 @@ if(a===b){
 
 /////////////LOGICAL OPERATORS/////////////////////
 
-var age=22;
+var age = 22;
 
-if(age>=18 && age<=23){
+if (age >= 18 && age <= 23) {
     document.write("yes you are eligible <br>")
 }
 
@@ -42,9 +42,9 @@ if(age>=18 && age<=23){
 
 
 
-var age=22;
+var age = 22;
 
-if(age>=23 || age<=22){
+if (age >= 23 || age <= 22) {
     document.write("yes you are eligible <br>")
 }
 
@@ -52,10 +52,10 @@ if(age>=23 || age<=22){
 
 
 
-var age=22;
+var age = 22;
 
-if (!(age >= 23 )){
-   document.write("yes you are eligible <br>")
+if (!(age >= 23)) {
+    document.write("yes you are eligible <br>")
 }
 
 
@@ -65,12 +65,12 @@ if (!(age >= 23 )){
 
 document.write("<h1>If Else Conditions </h1>")
 
-var a =400;
-var b= "200";
+var a = 400;
+var b = "200";
 
-if(!(a == b)){
+if (!(a == b)) {
     document.write("a is equal to b <br>")
-}else{
+} else {
     document.write("b is not equal <br>")
 }
 
@@ -81,39 +81,73 @@ if(!(a == b)){
 
 
 
-var name ="Alia"
-var name2 ="Sid"
-var gender="male";
+var name = "Alia"
+var name2 = "Sid"
+var gender = "male";
 
-if(gender==="male"){
+if (gender === "male") {
     document.write("Hello Mr." + name2 + "<br>");
-}else{
-    document.write("Hello Ms." + name +"<br>");
+} else {
+    document.write("Hello Ms." + name + "<br>");
 }
 
 
 ////////
 
-var a=9;
-if(a%2!=0){
-    document.write(a+ "is odd" + "<br>" );
+var a = 9;
+if (a % 2 != 0) {
+    document.write(a + "is odd" + "<br>");
 }
-else{
-    document.write(a+ "is even" + "<br>");
+else {
+    document.write(a + "is even" + "<br>");
 }
 
 
 ///////////
 
-var Num =12;
-var Num2 =8
-var String="male";
+var Num = 12;
+var Num2 = 8
+var String = "male";
 
-if(String==="male"){
+if (String === "male") {
     document.write(String + Num2 + "<br>");  //Its called Concatination
 }
 
 //Concatination
 
 
+//////////////IF ELSE IF //////////////////////
+
+var per = 65;
+
+if (per >= 80 && per <= 100) {
+    document.write("You are in merit" + "<br>");
+} else if (per >= 60 && per < 80) {
+    document.write("You are in Ist Division" + "<br>");
+} else if (per >= 40 && per <= 60) {
+    document.write("You are in IInd Division" + "<br>");
+} else if (per >= 35 && per <= 40) {
+    document.write("You are in IIIrd Division" + "<br>");
+} else if (per < 35) {
+    document.write("You are fail Sorry" + "<br>");
+} else {
+    document.write("Please Enter Valid Percentage" + "<br>");
+}
+
+
+
+
+//////////////CONDITIONAL TERNARY OPERATOR //////////////////////
+
+var x=100;
+var z;
+
+var a=20;
+var b;
+
+z=(x == 100)? "True": "False" + "<br>";  /// Short method
+(a <= 10)? b ="True": b ="False" + "<br>";  /// Long method
+
+document.write(z);
+document.write(b);
 
