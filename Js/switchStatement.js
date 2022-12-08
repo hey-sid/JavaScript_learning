@@ -51,24 +51,22 @@ switch (day) {
 
 /// Another Method Using Comparison Operator////
 
-var age = 61;
+var age =65;
 
-switch (age) {
+switch (true) {
     case (age >= 15 && age <= 17):
-        document.write("Teenagers <br>")
+        document.write("Teenagers <br>");
         break;
     case (age >= 21 && age <= 30):
-        document.write("Adult Age<br>")
+        document.write("Adult Age <br>")
         break;
     case (age >= 40 && age <= 60):
-        document.write("Middle Age<br>")
+        document.write("Middle Age <br>")
         break;
     case (age >= 61):
-        document.write("Old Aged Age<br>")
+        document.write("Old Age <br>")
         break;
-
-
     default:
-        document.write("Please Enter Valid Age")
+        document.write("Please Enter Valid Age ")
         break;
 }

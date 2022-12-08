@@ -1,5 +1,5 @@
-/*document.write("<i>Hello World</i> <br> ");
-document.write(" <b> Hello World </b>"); */
+document.write("<i>Hello World</i> <br> ");
+document.write(" <b> Hello World </b>"); 
 
 
 ////////////////VARIABLES OF JAVASCRIPT///////////////////
@@ -13,9 +13,9 @@ z = 84;
 z = "hello again";
 z = "hello again and  again";
 
-document.write(z)*/
+document.write(z)
 
-/*var first , second, third ;
+var first , second, third ;
 
 first=50;
 second="this is second variable value";
@@ -26,7 +26,7 @@ third=80
 
 
 document.write(first , second, third)
-document.write(second) */
+document.write(second) 
 
 //let first="Sid";
 
