@@ -140,7 +140,7 @@ if (per >= 80 && per <= 100) {
 //////////////CONDITIONAL TERNARY OPERATOR //////////////////////
 
 var x=100;
-var z;
+var z; 
 
 var a=20;
 var b;
