@@ -96,19 +96,19 @@ document.write("<br>");
 
 
 //=============================
-function sum (math, sci, eng){
-    var s= math + sci + eng;
+// function sum (math, sci, eng){
+//     var s= math + sci + eng;
 
-    return s;
-}
+//     return s;
+// }
 
-function percentage(tt){
-    var per =tt/300*100
+// function percentage(tt){
+//     var per =tt/300*100
 
-    document.write(per);
+//     document.write(per);
     
-}
+// }
 
-var total= sum(65, 65, 65);
-percentage(total);
+// var total= sum(65, 65, 65);
+// percentage(total);
 

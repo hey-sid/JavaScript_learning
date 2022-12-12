@@ -8,12 +8,23 @@
     <!-- <script src="./Js/javascriptBasics.js"></script> -->
     <!-- <script src="./Js/ifelse.js"></script> -->
     <!-- <script src="./Js/switchStatement.js"></script> -->
-    <script src="./Js/alert-Confirm-Prompt.js"></script>
+    <!-- <script src="./Js/alert-Confirm-Prompt.js"></script> -->
+    <!-- <script src="./Js/events.js"></script> -->
     <!-- <script src="./Js/functions.js"></script> -->
+    <script src="./Js/loops.js"></script>
 </head>
-<body>
+<body onresize="onResize()" onload="onLoad()">
     <div id="main">
-        
+        <button onclick="onClick()">Click</button>
+        <button ondblclick="onDoubleClick()">Double Click</button>
+        <button oncontextmenu="onContextMenu()">Right Click</button>
+        <button onmouseover="onMouseHover()">Hover</button>
+        <button onmouseout="onMouseOut()">Mouse Out</button>
+        <button onmousedown="onMouseDown()">Mouse Down</button>
+        <button onmouseup="onMouseUp()">Mouse Up</button>
+        <button onkeypress="onKeyPress()">Key Press</button>
+        <button onkeyup="onKeyUp()">Key Up</button>
+        <button onkeydown="onKeyDown()">Key Down</button>
     </div>
 </body>
-</html>
+</html>     
