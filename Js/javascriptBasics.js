@@ -1,7 +1,3 @@
-document.write("<i>Hello World</i> <br> ");
-document.write(" <b> Hello World </b>"); 
-
-
 ////////////////VARIABLES OF JAVASCRIPT///////////////////
 
 // var z="this is variable";
@@ -26,7 +22,7 @@ third=80
 
 
 document.write(first , second, third)
-document.write(second) 
+document.write(second)
 
 //let first="Sid";
 
@@ -115,7 +111,7 @@ document.write(typeof x)*/
 // var a=10;
 // var b=10;
 
-//document.write(a == b);  //this both values are equal    ==   OP: true 
+//document.write(a == b);  //this both values are equal    ==   OP: true
 
 // var a="10";
 // var b="10";
@@ -137,6 +133,35 @@ document.write(typeof x)*/
 //document.write(5 < 4);    //first value is not less than second value    ===   OP: false
 
 //document.write(4 <= 4);    //first value is less or equal to second value    ===   OP: true
+
+
+
+
+
+
+//////////////////GLOBAL VARIABLE & LOCAL VARIABLE////////////////////
+
+//var a=10; <----------------- if the variable writtin outside of the function its called Global Variable
+
+// function functionName()  {
+//     var b=25; <------------------- if the variable writtin inside of the function its called Local Variable
+// }
+
+// Example
+
+/////////Global Variables////////////////
+
+// var a="Hello, world!";
+
+// function functionName() {
+//     document.write(a + "<br>");
+// }
+
+// functionName();
+
+// document.write(a);
+// document.write(a);
+
 
 
 
