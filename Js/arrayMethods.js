@@ -100,3 +100,75 @@ document.write("9). " + a + "<br>"); /// Avi, 25, 45, Sid // Initial Output
 
 var b= a.join(" ");
 document.write("9). " + b + "<br><br>"); /// Avi 25 45 Sid // It makes single value 
+
+
+// Array slice() Method
+//====================
+//eg:1
+
+var a=["Avi", 25, 45, "Sid"];
+
+document.write("10). " + a + "<br>"); /// Avi, 25, 45, Sid // Initial Output
+
+var b= a.slice(1, 3);
+document.write("10). " + b + "<br>"); /// 25 45 // It will slice the value whichever you want 
+
+
+//eg:2
+
+var a=["Avi", 25, 45, "Sid"];
+
+document.write("10). " + a + "<br>"); /// Avi, 25, 45, Sid // Initial Output
+
+var b= a.slice(-2);
+document.write("10). " + b + "<br><br>"); /// 45, Sid// It will slice the value whichever you want 
+
+
+// Array splice() Method
+//====================
+//eg:1
+
+var a=["Avi", 25, 45, "Sid"];
+
+document.write("11). " + a + "<br>"); /// Avi, 25, 45, Sid // Initial Output
+
+a.splice(2, 1, 70, 80);
+document.write("11). " + a + "<br><br>"); /// Avi, 25, 70, 80, Sid // It will add the value wherever you want 
+
+
+//eg:2
+
+var a=["Avi", 25, 45, "Sid"];
+
+document.write("11). " + a + "<br>"); /// Avi, 25, 45, Sid // Initial Output
+
+a.splice(-2, 2, 70, 80);
+document.write("11). " + a + "<br><br>"); /// Avi, 25, 70, 80 // It will add the value wherever you want 
+
+
+
+// Array isArray() Method
+//eg:1 //basic Example
+
+var a =["Sid", 20, "Madutha"];
+
+document.write("12). " + a + "<br>");/// Sid, 20, Madutha // Initial Output
+
+var b = Array.isArray(a);
+document.write("12). " + b + "<br>");// True
+
+
+//eg:2 //basic Example
+
+//var a =["Sid", 20, "Madutha"];
+var a ="Sid";
+
+document.write("12). " + a + "<br>");/// Sid, 20, Madutha // Initial Output
+
+if(Array.isArray(a)){
+    document.write("12). " + "Yes its an Array")
+}else{
+    document.write("12). " + "Sorry its not an Array")
+}
+
+ 
