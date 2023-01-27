@@ -168,7 +168,104 @@ document.write("12). " + a + "<br>");/// Sid, 20, Madutha // Initial Output
 if(Array.isArray(a)){
     document.write("12). " + "Yes its an Array")
 }else{
-    document.write("12). " + "Sorry its not an Array")
+    document.write("12). " + "Sorry its not an Array" + "<br><br>")
 }
 
- 
+
+
+
+// Array indexOf() Method
+//eg:1
+
+var a =["Sid", "Avi", "Shubham", "Vijay", "Avi"];
+
+document.write("13). " + a + "<br>");/// Sid,Avi,Shubham,Vijay,Avi // Initial Output
+
+var b = a.indexOf("Avi", 2);
+document.write("13). " + b + "<br><br>"); // Output  4 
+
+
+
+// Array lastindexOf() Method
+//eg:1
+
+var a =["Sid", "Avi", "Shubham", "Vijay", "Avi"];
+
+document.write("14). " + a + "<br>");/// Sid,Avi,Shubham,Vijay,Avi // Initial Output
+
+var b = a.lastIndexOf("Avi", 3)
+document.write("14). " + b + "<br><br>"); // Output 1
+
+
+
+
+// Array includes() Method
+//eg:1
+
+var a=["Rahul", "Avi", "Aman"];
+
+document.write("15). " + a + "<br>");/// Rahul,Avi,Aman // Initial Output
+
+var b = a.includes("Rahul");
+document.write("15). " + b + "<br><br>"); /// True rahul exist in Array
+
+
+
+
+// Array some() Method
+//eg:1
+
+var age = [10, 12, 14, 18, 20];
+document.write("16). " + age + "<br>"); /// 10,12,14,18,20  Initial Output
+
+var b = age.some(adultCheck);
+document.write("16). " + b + "<br><br>"); // 18 and 20 passed the test so the answer is true
+
+function  adultCheck(age){
+    return age >= 18;
+}
+
+
+
+// Array every() Method
+//eg:1
+
+var age = [10, 12, 19, 18, 20];
+document.write("17). " + age + "<br>"); /// 10,12,19,18,20  Initial Output
+
+var b = age.every(adultCheck);
+document.write("17). " + b + "<br><br>"); // 10 is not passed the test so the answer is false every value should pass the test
+function  adultCheck(age){
+    return age >= 18;
+}
+
+
+
+
+// Array find() Method
+//eg:1
+
+var age = [10, 12, 19, 18, 20];
+document.write("18). " + age + "<br>"); /// 10,12,19,18,20  Initial Output
+
+var b = age.find(adultAge);
+
+function adultAge(age){
+    return age >= 11;
+}
+document.write("18)." + b + "<br><br>")// 12 passes the test so output is 12
+
+
+
+// Array findIndex() Method
+//eg:1
+
+var age = [10, 12, 19, 18, 20];
+document.write("19). " + age + "<br>"); /// 10,12,19,18,20  Initial Output
+
+var b = age.findIndex(adultAge);
+
+function adultAge(age){
+    return age >= 11;
+}
+document.write("19). " + b + "<br><br>")// 12 passes the test so the index is 1
